@@ -1,0 +1,124 @@
+.home
+{
+    display: flex;
+    flex-direction: column;
+
+    .title-container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(-45deg, #EA5481, #C934C1, #1FB789, #23D347);
+        background-size: 400% 400%;
+        animation: gradient-movement 15s ease-in-out infinite;
+
+        .content-wrapper
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3em;
+            flex: 1;
+            max-width: 1000px;
+        }
+
+        .message-container
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+
+            .title
+            {
+                font-size: 50px;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            .subtitle
+            {
+                font-size: 24px;
+                color: #fff;
+            }
+        }
+
+        .button-container
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .form-container
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+
+        .content-wrapper
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex: 1;
+            max-width: 1000px;
+        }
+    }
+}
+
+.home-link
+{
+    text-decoration: none;
+}
+
+@media (min-width: 901px)
+{
+    .home
+    {
+        flex-direction: row;
+        min-height: 100vh;
+        background: linear-gradient(-45deg, #EA5481, #C934C1, #1FB789, #23D347);
+        background-size: 400% 400%;
+        animation: gradient-movement 15s ease-in-out infinite;
+
+        .title-container
+        {
+            flex: 1;
+            background: none;
+            animation: none;
+        }
+
+        .form-container
+        {
+            flex: 1;
+            background-color: #fff;
+        }
+    }
+}
+
+@keyframes gradient-movement
+{
+    0%
+    {
+        background-position: 0 50%;
+    }
+
+    50%
+    {
+        background-position: 100% 50%;
+    }
+
+    100%
+    {
+        background-position: 0 50%;
+    }
+}
