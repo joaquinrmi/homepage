@@ -56,7 +56,7 @@
         }
     }
 
-    .form-container
+    .form-section
     {
         display: flex;
         flex-direction: row;
@@ -72,7 +72,7 @@
             flex: 1;
             max-width: 1000px;
 
-            .signup-form-container
+            .form-container
             {
                 display: flex;
                 flex-direction: row;
@@ -84,6 +84,11 @@
                 border-radius: 6px;
             }
         }
+    }
+
+    .form-section.single
+    {
+        justify-content: center;
     }
 }
 
@@ -109,11 +114,11 @@
             animation: none;
         }
 
-        .form-container
+        .form-section
         {
             flex: 1;
 
-            .signup-form-container
+            .form-container
             {
                 padding: 2em 0;
             }
