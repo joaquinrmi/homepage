@@ -44,7 +44,9 @@ const Home: React.FunctionComponent<Props> = (props) =>
 
         <div className="form-container">
             <div className="content-wrapper">
-                <SignupForm id="home-signup" />
+                <div className="signup-form-container">
+                    <SignupForm id="home-signup" />
+                </div>
             </div>
         </div>
     </div>;
